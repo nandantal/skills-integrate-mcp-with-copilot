@@ -1,6 +1,5 @@
 {
   "servers": {
-    // The GitHub Copilot API server
     "github": {
       "type": "http",
       "url": "https://api.githubcopilot.com/mcp/"
