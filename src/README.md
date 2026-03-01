@@ -25,6 +25,35 @@ A super simple FastAPI application that allows students to view and sign up for 
    - API documentation: http://localhost:8000/docs
    - Alternative documentation: http://localhost:8000/redoc
 
+## MCP Integration
+
+This project is configured to use the GitHub Model Context Protocol (MCP) server for enhanced AI capabilities with Copilot.
+
+### How it works
+
+- The `.vscode/mcp.json` file connects Copilot to the GitHub MCP server.
+- You can use Copilot Agent Mode to:
+   - List, triage, and solve issues using Copilot tools
+   - Create pull requests and automate code changes
+   - Research similar projects and generate ideas
+
+### Example MCP server configuration
+
+```json
+{
+   "servers": {
+      "github": {
+         "type": "http",
+         "url": "https://api.githubcopilot.com/mcp/"
+      }
+   }
+}
+```
+
+See `.vscode/mcp.json` for the actual configuration.
+
+For more information, see [Model Context Protocol](https://modelcontextprotocol.io/introduction).
+
 ## API Endpoints
 
 | Method | Endpoint                                                          | Description                                                         |
